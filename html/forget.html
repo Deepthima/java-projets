@@ -1,0 +1,77 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>password Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Old password</label><br>
+    <input type="text" id="fname" name="Old password" placeholder="old password"><br>
+
+    <label for="lname">new password</label><br>
+    <input type="text" id="lname" name="new password" placeholder="new password"><br>
+
+
+    <label for="userid">email id</label><br>
+    <input type="text" id="user" name="usern" placeholder="email"><br></input>
+
+<label for="userid">verification code</label><br>
+    <input type="text" id="user" name="usern" placeholder=" "><br></input>
+  </form>
+</div>
+
+
+    <input type="Reset" onclick="showpromt()"> </input>
+ <a href="new_newshome_page.html">go to home page</a>
+
+ 
+<script>
+function showpromt()
+{
+
+document.write("<h1>"+name+"\t\t Password has been reset</h1>");
+
+}
+function goback()
+{window.history.back();
+}
+</script>
+</body>
+</html>
